@@ -1,0 +1,20 @@
+--Create your own store! Your store should sell one type of things, like clothing or bikes, whatever you want your store to specialize in. You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store. You should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items.--
+
+CREATE TABLE MerchStore (id INTEGER PRIMARY KEY, name TEXT, description TEXT, quantity NUMERIC, price NUMERIC);
+
+INSERT INTO MerchStore VALUES (1, "OG Tee", " Natural Tee", 24, 24);
+INSERT INTO MerchStore VALUES (2, "Stay Warm", "Natural Hoodie", 32, 49);
+INSERT INTO MerchStore VALUES (3, "Cap-itain", "Multicolor Trucker Hat", 17, 20);
+INSERT INTO Merchstore VALUES (4, "Pride Tee", "Multicolor Tee", 13, 24);
+INSERT INTO MerchStore VALUES (5, "BLM Tee", "Black/Charcoal Tee", 21, 24);
+INSERT INTO MerchStore VALUES (6, "On the Van Gogh", "Abstract Sweat Set", 50, 65);
+INSERT INTO MerchStore VALUES (7, "OG Long", "Logo Long Sleeve", 31, 34);
+INSERT INTO MerchStore VALUES (8, "The Knight", "Black Hoodie", 49, 49);
+INSERT INTO MerchStore VALUES (9, "Keep on Truckin'", "Blue Trucker Hat", 32, 20);
+INSERT INTO MerchStore VALUES (10, "Carried", "Multicolor Tote Bag", 28, 20);
+
+SELECT * 
+FROM MerchStore
+ORDER BY price;
+
+SELECT SUM(quantity) FROM Merchstore;
